@@ -1,5 +1,5 @@
 module.exports = function longestConsecutiveLength(array) {
-	let max = 0;
+    let max = 0;
     let set = [];
     const L =array.length;
 	
@@ -14,14 +14,14 @@ module.exports = function longestConsecutiveLength(array) {
 		 
 		if (!set.includes(array[i]-1)){
 			
-			let j = array[i];
+		let j = array[i];
                 while (set.includes(j))
                     j++;
 			
-			if (max<(j-array[i]))
+		if (max<(j-array[i]))
                 max = j-array[i];
 		}
-	}	
+     }	
 	return max;
 }	
  
